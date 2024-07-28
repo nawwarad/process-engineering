@@ -1,4 +1,4 @@
-# Re-learning Process Engineering with Codes
+# Re-learning Process Engineering with Coding
 With my two years experience in Python and SQL, I wonder how I can use that to tackle Process or Chemical Engineering fundamentals. This repo will used to revisit my old projects and homeworks during my time learing Chemical Engineering. Some topics that could be covered include Process Equipment design, Process Simulations, and Process Analysis.
 # What I Use
 Python 3.10
