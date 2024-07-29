@@ -129,10 +129,9 @@ def fluid_input_heat_capacity(df, temp_prompt):
         c_value = df['a2'].iloc[i]
         d_value = df['a3'].iloc[i]
         e_value = df['a4'].iloc[i]
-        mol_weight = df['MW'].iloc[i]
 
         result = chem.Poling(delta_cold_temp, a_value, b_value, c_value, d_value, e_value)
-        result = round(result / mol_weight, 4)
+        result = round(result, 4)
         cp_input_components[component] = result
 
     for key in cp_input_components:
@@ -156,10 +155,9 @@ def fluid_output_heat_capacity(df, temp_prompt):
         c_value = df['a2'].iloc[i]
         d_value = df['a3'].iloc[i]
         e_value = df['a4'].iloc[i]
-        mol_weight = df['MW'].iloc[i]
 
         result = chem.Poling(delta_hot_temp, a_value, b_value, c_value, d_value, e_value)
-        result = round(result / mol_weight, 4)
+        result = round(result, 4)
         cp_output_components[component] = result
     
     for key in cp_output_components:
