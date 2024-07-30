@@ -74,5 +74,13 @@ plt.plot(t_arr, conc_prof[:, 5], label='Cf')
 
 plt.legend(loc='best')
 plt.xlabel('t (minute)')
-plt.ylabel('C (mol/L)')
-plt.show()
+plt.ylabel('C (mole/L)')
+# plt.show()
+
+final_conc_a = conc_prof[-1,0]
+Xa = round(((ic_a - final_conc_a) / ic_a) * 100, 4)
+print("Final conversion of species A is " + str(Xa) + "%")
+
+final_conc_b = conc_prof[-1,1]
+Xb = round(((ic_a - final_conc_b) / ic_a) * 100, 4)
+print("Final conversion of species B is " + str(Xb) + "%")
