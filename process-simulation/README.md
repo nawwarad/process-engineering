@@ -73,7 +73,7 @@ To run the simulation and plot the concentration profiles:
    python concentration-over-time.py
    ```
 
-The output will include a plot showing the concentration of each species over time.
+The output will include a plot showing the concentration of each species over time, the conversion for species A and B.
 
 ## Dependencies
 
